@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#7c3aed">
+  <title>SafeHer | Personal Safety Companion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">S</span><span>SafeHer<small>PERSONAL SAFETY COMPANION</small></span></a>
+    <nav><a href="#dashboard">Dashboard</a><a href="#contacts">Trusted contacts</a><a href="#help">Nearby help</a></nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" id="dashboard">
+      <div>
+        <p class="eyebrow">YOUR SPACE. YOUR SAFETY.</p>
+        <h1>Feel prepared.<br><span>Stay connected.</span></h1>
+        <p class="intro">Keep trusted people and useful safety options close at hand.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#contacts">Manage contacts</a>
+          <button class="button button-outline" id="locationBtn">Get my location</button>
+        </div>
+      </div>
+      <div class="sos-card">
+        <div class="pulse">SOS</div>
+        <h2>Need urgent help?</h2>
+        <p>Use your phone to contact India's emergency response number.</p>
+        <a class="button button-danger" href="tel:112">Call 112</a>
+        <small>Only use this for a genuine emergency.</small>
+      </div>
+    </section>
+
+    <section class="notice"><strong>Prototype notice</strong><span>This website does not automatically send SMS, share your location, or contact emergency services. Use the call option on your device and verify all information.</span></section>
+
+    <section class="section-grid">
+      <article class="panel" id="contacts">
+        <div class="section-head"><div><p class="eyebrow purple">YOUR SUPPORT CIRCLE</p><h2>Trusted contacts</h2></div><span class="count" id="contactCount">0 saved</span></div>
+        <form id="contactForm" class="contact-form">
+          <label>Name<input id="contactName" required maxlength="50" placeholder="Enter contact name"></label>
+          <label>Phone number<input id="contactPhone" required type="tel" inputmode="tel" maxlength="16" placeholder="e.g. +91 9876543210"></label>
+          <button class="button button-primary" type="submit">Add contact</button>
+        </form>
+        <div id="contactList" class="contact-list"><p class="empty">No contacts added yet. Add someone you trust.</p></div>
+      </article>
+
+      <article class="panel location-panel">
+        <p class="eyebrow purple">LOCATION CHECK</p><h2>Where am I?</h2>
+        <p class="muted">Your browser will ask permission before accessing your location.</p>
+        <div class="location-result" id="locationResult">Location has not been requested.</div>
+        <button class="button button-primary" id="locationBtn2">Find my location</button>
+        <p class="tiny">Location is requested only when you press the button. This demo does not upload it to a server.</p>
+      </article>
+    </section>
+
+    <section class="panel help-panel" id="help">
+      <div class="section-head"><div><p class="eyebrow purple">QUICK REFERENCE</p><h2>Nearby help</h2></div></div>
+      <div class="help-grid">
+        <div class="help-item"><span>🚓</span><div><b>Police</b><small>Emergency response: 112</small></div><a href="tel:112">Call</a></div>
+        <div class="help-item"><span>🚑</span><div><b>Ambulance</b><small>Emergency response: 112</small></div><a href="tel:112">Call</a></div>
+        <div class="help-item"><span>🔥</span><div><b>Fire & rescue</b><small>Emergency response: 112</small></div><a href="tel:112">Call</a></div>
+        <div class="help-item"><span>☎️</span><div><b>Women helpline</b><small>181 (availability may vary by state)</small></div><a href="tel:181">Call</a></div>
+      </div>
+      <p class="tiny">Numbers are provided as a quick reference. Confirm local availability. This section is not a live directory.</p>
+    </section>
+    <footer>© 2026 SafeHer • Student project prototype <span>Designed with privacy and clarity in mind.</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
